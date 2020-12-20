@@ -1,0 +1,15 @@
+// import base ============================================
+@import "base/variables";
+@import "base/media";
+// Code ===================================================
+* {
+    font-family: "Museo", sans-serif;
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+// import blocks ==========================================
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/buttons";
