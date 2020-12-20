@@ -1,6 +1,5 @@
 // import base ============================================
 @import "base/variables";
-@import "base/media";
 // Code ===================================================
 * {
     font-family: "Museo", sans-serif;
@@ -9,7 +8,17 @@
     max-width: 950px;
     margin: 0 auto;
 }
+.label {
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
 // import blocks ==========================================
 @import "blocks/promo";
 @import "blocks/header";
+@import "blocks/advantage";
 @import "blocks/buttons";
+
+// import media ===========================================
+@import "base/media";
