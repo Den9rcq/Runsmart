@@ -36,7 +36,18 @@
             margin: 60px 0 0 0;
         }
         &__icons {
-            width: 80%;
+            width: 85%;
+        }
+        &__icon {
+            width: 55px;
+            font-size: 12px;
+        }
+        &__header {
+            font-size: 36px;
+        }
+        &__subheader {
+            margin: 25px 0 0 0;
+            font-size: 21px;
         }
     }
 
@@ -44,8 +55,23 @@
         &__official {
             display: none;
         }
+        &__logo {
+            width: 45%;
+        }
+        &__contacts {
+            width: 45%;
+        }
+        &__phone {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+        }
     }
-
+    .button {
+        &_top {
+            width: 130px;
+            font-size: 11px;
+        }
+    }
     .advantage {
         &__wrapper {
             display: flex;
@@ -59,6 +85,14 @@
             &:first-child {
                 margin: 0;
             }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .promo {
+        &__icons {
+            justify-content: space-between;
         }
     }
 }
