@@ -18,6 +18,11 @@
     .feed-form {
         width: 50%;
     }
+    .carousel {
+        &__inner {
+            width: 80%;
+        }
+    }
 }
 
 @media (max-width: 767px) {
