@@ -1,6 +1,10 @@
 .consultation {
     padding: 100px 0 92px 0;
-    background: url("../img/bg_consultation.png") center (center/cover) no-repeat;
+    background: url("../img/bg_consultation.jpg") center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
     &__title {
         color: #ffffff;
         font-size: 36px;
