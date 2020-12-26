@@ -122,6 +122,17 @@
     .feed-form {
         width: 80%;
     }
+    .catalog {
+        &__tabs {
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+        }
+        &__tab {
+            margin: 10px 0;
+            width: 70%;
+        }
+    }
 }
 
 @media (max-width: 320px) {
