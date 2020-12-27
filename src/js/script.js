@@ -27,7 +27,7 @@ $(document).ready(function () {
             .closest('div.container').find('div.catalog__row').removeClass('catalog__row_active').eq($(this).index()).addClass('catalog__row_active');
     });
 
-    // Script =====================================================================================
+    // Slide =====================================================================================
 
     function toggleSlide(item) {
         $(item).each(function (i) {
