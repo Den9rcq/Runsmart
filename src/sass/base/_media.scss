@@ -157,6 +157,30 @@
             margin: 40px 0 0 0;
         }
     }
+
+    .footer {
+        &__info {
+            width: 320px;
+        }
+    }
+
+    .modal {
+        width: 280px;
+        min-height: 300px;
+        &__column {
+            padding: 20px 10px;
+        }
+        &__close {
+            top: -35px;
+            right: -15px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 12px;
+        }
+    }
 }
 
 @media (max-width: 320px) {
