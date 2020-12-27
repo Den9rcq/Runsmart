@@ -133,6 +133,30 @@
             width: 70%;
         }
     }
+    .reviews {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0 0 0;
+        }
+        &__img {
+            margin: 0;
+        }
+        &__review {
+            margin: 10px 0 0 0;
+        }
+        &__name {
+            margin: 20px 0 0 0;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+        &__descr {
+            margin: 40px 0 0 0;
+        }
+    }
 }
 
 @media (max-width: 320px) {
