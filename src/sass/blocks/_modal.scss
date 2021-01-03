@@ -48,6 +48,13 @@
     &_mini {
         min-height: 140px;
     }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        border: none;
+        margin: 0 0 15px 0;
+    }
 }
 
 #consultation,

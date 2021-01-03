@@ -61,4 +61,39 @@ $(document).ready(function () {
         $('.overlay, #consultation, #thanks, #order').fadeOut('slow');
     });
 
+
+    // Validate form
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите своё имя",
+                    minlength: jQuery.validator.format("Введите {0} символа")
+                },
+                phone: "Пожалуйста, введите свой номер",
+                email: {
+                    required: "Пожалуйста, введите свой E-mail",
+                    email: "Неправильно введён адрес"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#order form');
+
+    // Masked (https://github.com/digitalBush/jquery.maskedinput)
+    $('input[name=phone]').mask("+7 (999) 999-99-99");
 });

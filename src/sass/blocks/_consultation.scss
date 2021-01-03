@@ -22,4 +22,12 @@
         text-align: left;
         line-height: normal;
     }
+    .error {
+        border: 1px solid $main-color;
+    }
+    label.error {
+        border: none;
+        margin: 0 0 15px 0;
+        color: #fff;
+    }
 }
