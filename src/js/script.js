@@ -115,4 +115,21 @@ $(document).ready(function () {
         });
         return false;
     });
+
+    // Smoth scroll and pageup
+    // Icon appearing and disappearing
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1100) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    // Smoth scroll 
+    $("a[href^='#']").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({ scrollTop: $(_href).offset().top + "px" });
+        return false;
+    });
 });
