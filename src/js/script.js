@@ -96,4 +96,23 @@ $(document).ready(function () {
 
     // Masked (https://github.com/digitalBush/jquery.maskedinput)
     $('input[name=phone]').mask("+7 (999) 999-99-99");
+
+    // ajax
+    $('form').submit(function (e) {
+        e.preventDefault();
+        if (!$(this).valid()) {
+            return;
+        }
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn();
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
