@@ -115,6 +115,9 @@
         }
     }
     .consultation {
+        &__title {
+            font-size: 22px;
+        }
         &__descr {
             font-size: 17px;
         }
